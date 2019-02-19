@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://AnimationPlayer.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Sprite.gd" type="Script" id=3]
+[ext_resource path="res://Timer.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=1]
 
@@ -80,5 +81,15 @@ script = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 11
+
+[node name="Timer" type="Timer" parent="." index="6"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+script = ExtResource( 4 )
+
+[connection signal="timeout" from="Timer" to="AnimationPlayer" method="_on_Timer_timeout"]
 
 

@@ -26,7 +26,23 @@ tracks/0/keys = {
 
 [node name="Main" type="Node2D" index="0"]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
+[node name="ColorRect" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1019.0
+margin_bottom = 595.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -37,7 +53,7 @@ playback_speed = 1.0
 blend_times = [  ]
 script = ExtResource( 1 )
 
-[node name="Soldat 1" type="Sprite" parent="." index="1"]
+[node name="Soldat 1" type="Sprite" parent="." index="2"]
 
 position = Vector2( 600, 489 )
 texture = ExtResource( 2 )
@@ -46,7 +62,7 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 10
 
-[node name="Soldat 2" type="Sprite" parent="." index="2"]
+[node name="Soldat 2" type="Sprite" parent="." index="3"]
 
 position = Vector2( 598, 261 )
 texture = ExtResource( 2 )
@@ -55,7 +71,7 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 5
 
-[node name="Soldat 3" type="Sprite" parent="." index="3"]
+[node name="Soldat 3" type="Sprite" parent="." index="4"]
 
 position = Vector2( 852, 151 )
 texture = ExtResource( 2 )
@@ -64,7 +80,7 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 4
 
-[node name="Soldat 4" type="Sprite" parent="." index="4"]
+[node name="Soldat 4" type="Sprite" parent="." index="5"]
 
 position = Vector2( 311, 422 )
 texture = ExtResource( 2 )
@@ -73,7 +89,7 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 8
 
-[node name="Soldat 6" type="Sprite" parent="." index="5"]
+[node name="Soldat 6" type="Sprite" parent="." index="6"]
 
 position = Vector2( 426, 100 )
 texture = ExtResource( 2 )
@@ -82,7 +98,7 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 11
 
-[node name="Soldat 7" type="Sprite" parent="." index="6"]
+[node name="Soldat 7" type="Sprite" parent="." index="7"]
 
 position = Vector2( 884.654, 489.225 )
 rotation = 0.85142
@@ -93,7 +109,7 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 11
 
-[node name="Soldat 8" type="Sprite" parent="." index="7"]
+[node name="Soldat 8" type="Sprite" parent="." index="8"]
 
 position = Vector2( 1100.65, 205.225 )
 rotation = 0.85142
@@ -104,29 +120,13 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 11
 
-[node name="Timer" type="Timer" parent="." index="8"]
+[node name="Timer" type="Timer" parent="." index="9"]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
 script = ExtResource( 4 )
-
-[node name="ColorRect" type="ColorRect" parent="." index="7"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 310.0
-margin_bottom = 265.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 1, 1, 1, 1 )
 
 [connection signal="timeout" from="Timer" to="AnimationPlayer" method="_on_Timer_timeout"]
 

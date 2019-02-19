@@ -93,7 +93,18 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 11
 
-[node name="Timer" type="Timer" parent="." index="7"]
+[node name="Soldat 8" type="Sprite" parent="." index="7"]
+
+position = Vector2( 1100.65, 205.225 )
+rotation = 0.85142
+scale = Vector2( 1.96715, 1.96715 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+bateau = 42
+vie = 11
+
+[node name="Timer" type="Timer" parent="." index="8"]
 
 process_mode = 1
 wait_time = 1.0

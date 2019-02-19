@@ -72,4 +72,22 @@ _sections_unfolded = [ "Transform" ]
 bateau = 42
 vie = 8
 
+[node name="Soldat 5" type="Sprite" parent="." index="5"]
+
+position = Vector2( 226, 206 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+bateau = 42
+vie = 2
+
+[node name="Soldat 6" type="Sprite" parent="." index="6"]
+
+position = Vector2( 426, 100 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+bateau = 42
+vie = 11
+
 

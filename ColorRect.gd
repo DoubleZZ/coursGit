@@ -21,4 +21,6 @@ func _process(delta):
 		var ueueue
 		var onnesarreteplus
 		var ueueue
-		varr jzdfhdfdfsg
+		var jzdfhdfdfsg
+		var hdhfgkuhfgd
+		var ujygfh

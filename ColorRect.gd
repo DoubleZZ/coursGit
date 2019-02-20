@@ -14,3 +14,6 @@ func _process(delta):
 
 
 		var kikoulol
+		var jefaisnimportequoi
+		var keskya
+		var kestuvafaire

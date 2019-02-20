@@ -17,3 +17,5 @@ func _process(delta):
 		var jefaisnimportequoi
 		var keskya
 		var kestuvafaire
+		var je continue
+		var ueueue
